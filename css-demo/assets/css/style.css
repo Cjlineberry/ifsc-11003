@@ -1,7 +1,6 @@
 /* ---- CSS Demo ---- */
 
-/*  ---------------Box Sizing-----------------  */
-
+/* --------------- Box Sizing ----------------- */
 html {
   box-sizing: border-box;
 }
@@ -11,73 +10,197 @@ html {
   box-sizing: inherit;
 }
 
-
-/*----------------Global Styles ------------------*/
-
-body{
-font-family: "Montserrat", sans-serif;
-margin:0;  
+/* --------------- Global Styles ----------------- */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 
-header.primary{
-background-color:#3b8b62;
-text-align:center;
-text-shadow: 2px 2px #000000;  
-color:#ffffff;
-/*Single value short hand*/
-padding: 40px;  
-/*long form*/
-padding-top: 40px;
-padding-right: 40px;
-padding-bottom: 40px;
-padding-left: 40px;  
-/* T,R,B,L */
-padding: 20px 40px 20px 40px;  
-/* Two Value Top/Bottom / L/R */
-padding: 20px 40px;  
+/* --------------- Header ----------------- */
+header.primary {
+  background-color: #3b8b62;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+  color: #ffffff;
+  padding: 20px 40px;
 }
 
-header.primary h1{
-font-size: 2.4rem;
-margin:20px 0 0 0;  
+header.primary h1 {
+  font-size: 2.4rem;
+  margin: 20px 0 0 0;
 }
 
-header.primary h1 a{
-  color:#ffffff;
-  text-decoration:none;
+header.primary h1 a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-header.primary h2{
-font-size: 1.4rem;
-letter-spacing:.2px; 
-margin:10px 0 0 0;  
+header.primary h2 {
+  font-size: 1.4rem;
+  letter-spacing: 0.2px;
+  margin: 10px 0 0 0;
 }
 
-header.primary nav ul{
-  padding:0;
-  display:flex;
-  flex-direction:row;
-  justify-content:space-around;
-  margin:20px 0 10px 0;
+header.primary nav ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px 0 10px 0;
 }
 
-header.primary nav ul li{
-  list-style-type:none;
+header.primary nav ul li {
+  list-style-type: none;
 }
 
-header.primary nav ul a{
-  color:#ffffff;
-  padding:5px 7.5px;
-  border-radius:20px;
-  text-decoration:none;
-  background-color:#000000;
-  background-color:rgba(0,0,0,.4);
-  font-size:.9rem;
-  transition:.4s;
+header.primary nav ul a {
+  color: #ffffff;
+  padding: 5px 7.5px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 0.9rem;
+  transition: 0.4s;
 }
 
-header.primary nav a:hover{
-  background-color:rgba(0,0,0,.8);
+header.primary nav a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* --------------- Intro Section ----------------- */
+#intro h2 {
+  color: #3b638b;
+  border-bottom: 1px dotted #000;
+}
 
+/* --------------- Content Section ----------------- */
+#content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 40px 0;
+  margin: 30px auto;
+}
+
+#content .post {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  font-size: 0.7rem;
+}
+
+#content .post figure {
+  margin: 0;
+}
+
+#content time.post-date,
+#content figcaption {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
+
+#content a {
+  color: #3b8b62;
+  transition: 0.4s;
+}
+
+#content a:hover {
+  text-decoration: none;
+}
+
+/* --------------- Practice Section ----------------- */
+#practice h2 {
+  color: #3b8b62;
+  border-bottom: 1px dotted #cccccc;
+}
+
+#practice a {
+  color: #3b8b62;
+}
+
+#practice a:hover {
+  text-decoration: none;
+}
+
+#practice h3 {
+  border-left: 7.5px solid #3b8b62;
+  padding: 7.5px;
+}
+
+#practice table {
+  width: 100%;
+  border: 1px solid #c0c0c0;
+  border-collapse: collapse;
+}
+
+#practice caption {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 10px;
+}
+
+#practice tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#practice tr:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#practice td:nth-child(1n+2) {
+  text-align: right;
+}
+
+#practice th {
+  background-color: #17352b;
+  color: #ffffff;
+  padding: 7.5px;
+}
+
+#practice td {
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+/* --------------- Sidebar / Aside ----------------- */
+aside[role="complementary"] {
+  background-color: #3b8b62;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+aside .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+aside .container a {
+  color: #ffffff;
+}
+
+aside .container a:hover {
+  text-decoration: none;
+}
+
+aside .container a:last-child {
+  display: block;
+  text-align: right;
+  margin-top: 20px;
+}
+
+aside .widget footer {
+  display: none;
+}
+
+/* --------------- Footer ----------------- */
+#colophon {
+  background-color:#000;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+}
