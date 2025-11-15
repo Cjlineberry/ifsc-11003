@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning Lab</title>
+
+  <style>
+    html { box-sizing: border-box; }
+    *, *:before, *:after { box-sizing: inherit; }
+
+    body {
+      background-color: #ECECEC;
+      font-weight: bold;
+      font-family: Tahoma, Geneva, sans-serif;
+      color: #FFF;
+      text-align: center;
+      line-height: 24px;
+    }
+
+    /* FLEX CONTAINER */
+    #wrapper {
+      background-color: #FFF;
+      border: 1px solid #c0c0c0;
+      width: 800px;
+      margin: 0 auto;
+      text-shadow: 2px 2px #000;
+      padding-top: 20px;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    /* FOUR RECTANGLES */
+    #navy  { background-color: #001f3f; flex: 1; padding: 40px 0; }
+    #teal  { background-color: #39CCCC; flex: 1; padding: 40px 0; }
+    #blue  { background-color: #0074D9; flex: 1; padding: 40px 0; }
+    #aqua  { background-color: #7FDBFF; flex: 1; padding: 40px 0; }
+
+    /* FOOTER (separate element) */
+    #footer {
+      width: 800px;
+      background-color: #666;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Exercise</h1>
+
+  <section id="wrapper">
+    <div id="navy">Navy</div>
+    <div id="teal">Teal</div>
+    <div id="blue">Blue</div>
+    <div id="aqua">Aqua</div>
+  </section>
+
+  <div id="footer">Footer</div>
+
+</body>
+</html>
